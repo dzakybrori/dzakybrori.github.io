@@ -8,35 +8,69 @@
     /* =========== Colors ========== */
     --hue: 174;
     --sat: 63%;
+    --very-light-brown: #FFF3E4;
+    --light-brown: #EED6C4;
+    --brown: #6B4F4F;
+    --dark-brown: #483434;
 
     --first-color: hsl(var(--hue), var(--sat), 40%);
     --first-color-alt: hsl(var(--hue), var(--sat), 36%);
-    --title-color: hsl(var(--hue), 12%, 15%);
-    --text-color: hsl(var(--hue), 8%, 35%);
-    --body-color: hsl(var(--hue), 100%, 99%);
+    --title-color: var(--dark-brown);
+    --text-color: var(--brown);
+    --hint-color: var(--light-brown);
+    --body-color: var(--very-light-brown);
     --container-color: #FFFF;
 
     /* =========== Font and typography ========== */
     --body-font: 'Jost', sans-serif;
     --title-font: 'Bona Nova', serif;
 
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px */
+    --big-font-size: 2rem;
     --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
     --normal-font-size: .938rem;
-    --tiny-font-size: .625rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /* Font Weight (Bona Nova just have 400) */
+    --font-light: 300;
+    --font-very-light: 200;
+
+    /* =========== Margenes Bottom ========== */
+    /* .25rem =4px, .5rem = 8px, .75rem = 12px */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
 
     /* =========== z index ========== */
     --z-tooltip: 10;
     --z-fixed: 100;
+    --z-modal: 1000;
+
 }
 
 /* Responsive typography */
 @media screen and (min-width: 968px) {
     :root {
+        --big-font-size: 3rem;
         --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
         --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
     }
 }
 
+/* =============== VARIABLE DARK THEME =============== */
+/* =============== BUTTON DARK / LIGHT =============== */
 
 /* =============== BASE =============== */
 * {
@@ -50,11 +84,17 @@ html {
 }
 
 body {
-    margin: var(--header-height) 0 0 0;
+    margin: 0 0 var(--header-height) 0;
     font-family: var(--body-font);
+    font-weight: var(--font-light);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
+}
+
+h1, h2, h3, h4 {
+    color: var(--title-color);
+    font-family: var(--title-font);
 }
 
 ul {
@@ -72,14 +112,21 @@ img {
 
 /* =============== REUSABLE CSS CLASSES =============== */
 .section {
-    padding: 4.5rem 0 2rem;
+    padding: 2rem 0 4rem;
 }
 
 .section__title {
     font-size: var(--h1-font-size);
-    color: var(--title-color);
+}
+
+.section__subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+}
+
+.section__title, .section__subtitle {
     text-align: center;
-    margin-bottom: 1.5rem;
 }
 
 .section__height {
@@ -87,7 +134,101 @@ img {
 }
 
 /* =============== LAYOUT =============== */
+.container {
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
 /* =============== HEADER =============== */
+.header {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
+
 /* =============== NAV =============== */
+.nav {
+    max-width: 968px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo, 
+.nav__toggle {
+    color: var(--title-color);
+    font-family: var(--title-font);
+}
+
+.nav__toggle {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .nav__menu {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .4s;
+    }
+}
+
+.nav__list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+}
+
+.nav__icon {
+    font-size: 1.2rem;
+}
+
+.nav__close {
+    position: absolute;
+    right: 1.3rem;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav__close:hover {
+    color: var(--title-color);
+}
+
+.nav__logo:hover, 
+.nav__toggle:hover,
+.nav__link:hover {
+    color: var(--hint-color);
+}
+
+/* Show Menu */
+.show-menu {
+    bottom: 0;
+}
 
 /* Active Link */
+
+/* Change background header */
