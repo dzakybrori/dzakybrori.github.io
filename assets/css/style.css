@@ -30,6 +30,10 @@
     --home-img-bgshadow: inset 19px 19px 49px #cdb8a9, inset -19px -19px 49px #fff4df;
     --container-shadow: 22px 22px 56px #e8ddcf, -22px -22px 56px #fffff9;
 
+    /* About Button */
+    --about-btn-bg: linear-gradient(145deg, #ffe5d2, #d6c1b0);
+    --about-btn-shadow:  22px 22px 67px #c1ad9f, -22px -22px 67px #ffffe9;
+
     /* =========== Font and typography ========== */
     --body-font: 'Jost', sans-serif;
     --title-font: 'Bona Nova', serif;
@@ -250,7 +254,7 @@ img {
 
 .home__content {
     grid-template-columns: .5fr 3fr;
-    padding-top: var(--mb-0-75);
+    padding-top: var(--mb-2-5);
     align-items: center;
 }
 
@@ -354,6 +358,7 @@ img {
     padding: 1rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
+    transition: all 500ms ease;
 }
 
 .button:hover {
@@ -372,3 +377,48 @@ img {
 }
 
 /* ================= ABOUT ================= */
+.about__subtitle {
+    margin-bottom: var(--mb-0-75);
+}
+
+.about__img {
+    width: 350px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.about__data {
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background: var(--hint-color);
+}
+
+.about__description {
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__buttons .button {
+    padding: 1rem 1.5rem;
+    border-radius: 5000px;
+    color: var(--text-color);
+    background: var(--about-btn-bg);
+    box-shadow: var(--about-btn-shadow);
+}
+
+.about__buttons .button:hover {
+    color: var(--text-color);
+    background: var(--hint-color);
+    box-shadow: none;
+}
+
+/* ============== HOW I GET HERE ============== */
+
+/* ================= PORTOFOLIO ================= */
