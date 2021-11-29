@@ -29,7 +29,18 @@ function linkAction() {
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*======================= ACCORDION SKILLS ======================*/
+/*======================= PORTOFOLIO SWIPER ======================*/
+var swiper = new Swiper(".portofolio__container", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    spaceBetween: 32,
+    coverflowEffect: {
+      rotate: 0,
+    },
+  });
 
 /*======================= QUALIFICATION TABS ======================*/
 

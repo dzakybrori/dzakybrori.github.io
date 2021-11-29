@@ -20,6 +20,12 @@
     --container-color: #FFFF;
 
     /* =========== Neumorphis ========== */
+    /* Text Shadow */
+    --text-shadow: -1px -1px 2px hsla(0, 0%, 100%, 0.2), 4px 4px 8px rgba(66, 65, 65, 0.116), 1px 1px 3px rgba(65, 65, 65, 0.041), 2px 2px 5px rgba(0, 0, 0, 0.4);
+
+    /* 3d container */
+    --neumor-container-shadow: inset 0 -4px 7px 0 rgba(0, 0, 0, 0.5), inset 0 4px 7px 0 hsla(0, 0%, 100%, 0.15), 0 -30px 75px 0 #cdb8a946, 0 30px 75px 0 #cdb8a96e;
+
     /* Circle Button */
     --circle-btn-bg: linear-gradient(145deg, #fffff4, #e6dbcd);
     --circle-btn-shadow:  6px 6px 14px #d6ccc0, -6px -6px 14px #ffffff;
@@ -33,6 +39,11 @@
     /* About Button */
     --about-btn-bg: linear-gradient(315deg, #ffe5d2, #d6c1b0);
     --about-btn-shadow:  -16px -16px 32px #d6c1b0, 16px 16px 32px #ffebd8;
+
+    /* Qualification */
+    --qualification-left-shadow: -6px 6px 12px #e8ddcf, -6px -6px 12px #e8ddcf;
+    --qualification-right-shadow: 6px -6px 12px #e8ddcf, 6px 6px 12px #e8ddcf;
+    --qualification-rounder-shadow: 8px 8px 16px #d9cfc2, -8px -8px 16px #ffffff;
 
     /* =========== Font and typography ========== */
     --body-font: 'Jost', sans-serif;
@@ -67,6 +78,11 @@
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
+
+    /* =========== Hover overlay ========== */
+    --img-transition: .3s;
+    --img-hidden: hidden;
+    --img-scale: scale(1.1);
 
 }
 
@@ -358,16 +374,18 @@ img {
 /* ============== BUTTON =============== */
 .button {
     display: inline-block;
-    background-color: var(--title-color);
+    background-color: var(--text-color);
     color: var(--body-color);
     padding: 1rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
+    box-shadow: var(--neumor-container-shadow);
     transition: all 500ms ease;
 }
 
 .button:hover {
-    background-color: var(--text-color);
+    color: var(--text-color);
+    background-color: var(--hint-color);
 }
 
 .button__icon {
@@ -397,6 +415,7 @@ img {
     border-radius: 1rem;
     padding: 1.5rem;
     background: var(--hint-color);
+    box-shadow: var(--neumor-container-shadow);
 }
 
 .about__description {
@@ -434,13 +453,13 @@ img {
 .qualification__left {
     border-radius: .5rem;
     padding: var(--mb-0-5);
-    box-shadow:  -6px 6px 12px #e8ddcf, -6px -6px 12px #e8ddcf;
+    box-shadow: var(--qualification-left-shadow);
 }
 
 .qualification__right {
     border-radius: .5rem;
     padding: var(--mb-0-5);
-    box-shadow:  6px -6px 12px #e8ddcf, 6px 6px 12px #e8ddcf;
+    box-shadow: var(--qualification-right-shadow);
 }
 
 .qualification__subtitle {
@@ -477,8 +496,7 @@ img {
     align-self: center;
     background-color: var(--body-color);
     border-radius: 50%;
-    box-shadow: 8px 8px 16px #d9cfc2,
-                -8px -8px 16px #ffffff;
+    box-shadow: var(--qualification-rounder-shadow);
 }
 
 .qualification__inrounder {
@@ -507,3 +525,19 @@ img {
 }
 
 /* ================= PORTOFOLIO ================= */
+.portofolio__card {
+    position: relative;
+    width: 50vw;
+}
+
+.swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right {
+    background-image: none;
+}
+
+/* ================= CONTACT ME ================= */
+/* =================== FOOTER =================== */
+/* ================ MEDIA QUERIES =============== */
+/* For small device */
+/* For medium device */
+/* For large device */
+/* For tall screen on mobiles / desktop */
