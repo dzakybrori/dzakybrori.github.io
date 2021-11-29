@@ -132,12 +132,13 @@ ul {
 }
 
 a {
+    color: var(--text-color);
     text-decoration: none;
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out; /* Firefox 4 */
-    -webkit-transition: all 0.5s ease-in-out; /* Safari and Chrome */
-    -o-transition: all 0.5s ease-in-out; /* Opera */
-    -ms-transition: all 0.5s ease-in-out; /* Explorer 10 */
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out; /* Firefox 4 */
+    -webkit-transition: all 0.3s ease-in-out; /* Safari and Chrome */
+    -o-transition: all 0.3s ease-in-out; /* Opera */
+    -ms-transition: all 0.3s ease-in-out; /* Explorer 10 */
 }
 
 img {
@@ -535,7 +536,89 @@ img {
 }
 
 /* ================= CONTACT ME ================= */
+.contact__input {
+    width: 100%;
+    border-radius: .5rem;
+    background: var(--body-color);
+    box-shadow: inset 6px 6px 12px #e0d6c9,
+                inset -6px -6px 12px #ffffff;
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    margin-top: .5rem;
+    padding: .75rem .5rem .5rem .75rem;
+}
+
+#submit__button {
+    border: none;
+    cursor: pointer;
+}
+
 /* =================== FOOTER =================== */
+.footer {
+    padding: 0 1rem;
+}
+
+.footer__header {
+    text-align: center;
+    margin-bottom: var(--mb-1);
+}
+
+.footer__bg {
+    padding: 2rem 0;
+    border-radius: 2rem;
+    background: #FFF3E4;
+    box-shadow:  10px 10px 26px #ded3c6,
+                -10px -10px 26px #fdfcf8;
+}
+
+.footer__container {
+    row-gap: 1.75rem;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer__content {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    row-gap: 2rem;
+}
+
+.footer__subtitle {
+    margin-bottom: var(--mb-1);
+}
+
+.footer__item {
+    margin: 0 var(--mb-0-25);
+}
+
+.footer__link:hover {
+    color: var(--title-color);
+}
+
+.footer__code {
+    padding: 1rem;
+    margin: 0 1rem;
+    border-radius: .75rem;
+    background: #FFF3E4;
+    box-shadow: inset 8px 8px 16px #ded3c6,
+            inset -8px -8px 16px #ffffff;
+}
+
+.footer__rights {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: var(--small-font-size);
+}
+
 /* ================ MEDIA QUERIES =============== */
 /* For small device */
 /* For medium device */
