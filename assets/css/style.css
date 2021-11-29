@@ -628,6 +628,33 @@ img {
     font-size: var(--small-font-size);
 }
 
+/* ================== SCROLL UP ================= */
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: var(--hint-color);
+    box-shadow: var(--neumor-container-shadow);
+    padding: 0 .3rem;
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+}
+
+.scrollup:hover {
+    color: var(--body-color);
+    background-color: var(--text-color);
+}
+
+.scrollup__icon {
+    font-size: 1.5rem;
+}
+
+/* Show Scroll Top */
+.show-scroll {
+    bottom: 5rem;
+}
+
 /* ================ MEDIA QUERIES =============== */
 /* For small device */
 /* For medium device */
