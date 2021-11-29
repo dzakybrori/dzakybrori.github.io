@@ -539,5 +539,29 @@ img {
 /* ================ MEDIA QUERIES =============== */
 /* For small device */
 /* For medium device */
+@media screen and (min-width: 768px) {
+    .portofolio__container {
+        width: 610px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .portofolio__card {
+        width: 13vw;
+    }
+}
+
 /* For large device */
+@media screen and (min-width: 1024px) {
+    .portofolio__container {
+        width: 730px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .portofolio__card {
+        width: 16vw;
+    }
+}
+
 /* For tall screen on mobiles / desktop */
