@@ -266,6 +266,12 @@ img {
 }
 
 /* Active Link */
+.active-link {
+    border-radius: 10px;
+    background: #FFF3E4;
+    box-shadow: inset 5px 5px 9px #e0d6c9,
+            inset -5px -5px 9px #ffffff;
+}
 
 /* Change background header */
 

@@ -25,7 +25,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
+                        <a href="#home" class="nav__link active-link">
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
@@ -235,87 +235,89 @@
     </main>
 
     <!-- ======================= FOOTER ==================== -->
-    <footer class="footer" id="contact">
-        <div class="footer__bg">
-            <div class="footer__header">
-                <h1 class="footer__title">You've reached the end </h1>
-                <span class="footer__subtitle">Let's get in touch</span>
-            </div>
-            <div class="footer__container container grid">
-                <div class="footer__content">
-                    <ul class="footer__links">
-                        <li class="footer__item">
-                            <a href="https://www.instagram.com/dzakybrori/" class="footer__link">
-                                <i class="uil uil-instagram"></i> Instagram
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="https://bit.ly/3p1YajQ" class="footer__link">
-                                <i class="uil uil-linkedin-alt"></i> Linkedin
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="https://github.com/dzakybrori" class="footer__link">
-                                <i class="uil uil-github-alt"></i> Github
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="https://bit.ly/3l9ZRdJ" class="footer__link">
-                                <i class="uil uil-google-play"></i> My Apps
-                            </a>
-                        </li>
-                    </ul>
+    <section id="contact">
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__header">
+                    <h1 class="footer__title">You've reached the end </h1>
+                    <span class="footer__subtitle">Let's get in touch</span>
                 </div>
+                <div class="footer__container container grid">
+                    <div class="footer__content">
+                        <ul class="footer__links">
+                            <li class="footer__item">
+                                <a href="https://www.instagram.com/dzakybrori/" class="footer__link">
+                                    <i class="uil uil-instagram"></i> Instagram
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="https://bit.ly/3p1YajQ" class="footer__link">
+                                    <i class="uil uil-linkedin-alt"></i> Linkedin
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="https://github.com/dzakybrori" class="footer__link">
+                                    <i class="uil uil-github-alt"></i> Github
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="https://bit.ly/3l9ZRdJ" class="footer__link">
+                                    <i class="uil uil-google-play"></i> My Apps
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-                <div class="footer__content footer__code">
-                    <p class="hire__code">
-                        <strong>if(</strong>you.isInterested()<strong>)<br>
-                        &nbsp;&nbsp;switch(</strong>yourInterest<strong>) :<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;is</strong> ContactMe<strong>: </strong>contactMe.execute()<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<strong>is </strong> HireMe<strong>: </strong> hireMe.execute()<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<strong>default: alert(</strong>'Maybe you should contact me at least once'<strong>)<br>
-                        &nbsp;&nbsp;alert(</strong>'Thank You'<strong>)<br>
-                        &nbsp;&nbsp;return</strong> GetOpportunity<br>
-                        <strong>else<br>
-                        &nbsp;&nbsp;alert(</strong>'Are you sure? :( '<strong>)<br>
-                        &nbsp;&nbsp;me.</strong>levelUp()<br>
-                        &nbsp;&nbsp;<strong>throw(</strong>'Thank You'<strong>)</strong>
-                    </p>
-                </div>
-                
-                <div class="footer__content">
-                    <div class="contact__container container grid">
-                        <div class="contact__inputs grid">
-                            <form action="https://formsubmit.co/dzakybrori@gmail.com" method="POST" class="contact__form grid">
-                                <input type="hidden" name="_subject" value="New email from DzakyBrori. wooo!">
-                                <input type="hidden" name="_cc" value="broridzaky2702@gmail.com">
-                                <div class="contact__content">
-                                    <label for="name" class="contact__label">Your Name</label>
-                                    <input type="text" name="name" id="name" class="contact__input">
-                                </div>
-                                <div class="contact__content">
-                                    <label for="email" class="contact__label">Your Email</label>
-                                    <input type="text" name="email" id="email" class="contact__input">
-                                </div>
-                                <div class="contact__content">
-                                    <label for="message" class="contact__label">Message</label>
-                                    <textarea name="message" id="message" cols="0" rows="7" class="contact__input"></textarea>
-                                </div>
-                                <div>
-                                    <button type="submit" class="button button--flex" id="submit__button">Send Message
-                                        <i class="uil uil-message button__icon"></i>
-                                    </button>
-                                </div>
-                            </form>
+                    <div class="footer__content footer__code">
+                        <p class="hire__code">
+                            <strong>if(</strong>you.isInterested()<strong>)<br>
+                            &nbsp;&nbsp;switch(</strong>yourInterest<strong>) :<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;is</strong> ContactMe<strong>: </strong>contactMe.execute()<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<strong>is </strong> HireMe<strong>: </strong> hireMe.execute()<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<strong>default: alert(</strong>'Maybe you should contact me at least once'<strong>)<br>
+                            &nbsp;&nbsp;alert(</strong>'Thank You'<strong>)<br>
+                            &nbsp;&nbsp;return</strong> GetOpportunity<br>
+                            <strong>else<br>
+                            &nbsp;&nbsp;alert(</strong>'Are you sure? :( '<strong>)<br>
+                            &nbsp;&nbsp;me.</strong>levelUp()<br>
+                            &nbsp;&nbsp;<strong>throw(</strong>'Thank You'<strong>)</strong>
+                        </p>
+                    </div>
+                    
+                    <div class="footer__content">
+                        <div class="contact__container container grid">
+                            <div class="contact__inputs grid">
+                                <form action="https://formsubmit.co/dzakybrori@gmail.com" method="POST" class="contact__form grid">
+                                    <input type="hidden" name="_subject" value="New email from DzakyBrori. wooo!">
+                                    <input type="hidden" name="_cc" value="broridzaky2702@gmail.com">
+                                    <div class="contact__content">
+                                        <label for="name" class="contact__label">Your Name</label>
+                                        <input type="text" name="name" id="name" class="contact__input">
+                                    </div>
+                                    <div class="contact__content">
+                                        <label for="email" class="contact__label">Your Email</label>
+                                        <input type="text" name="email" id="email" class="contact__input">
+                                    </div>
+                                    <div class="contact__content">
+                                        <label for="message" class="contact__label">Message</label>
+                                        <textarea name="message" id="message" cols="0" rows="7" class="contact__input"></textarea>
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="button button--flex" id="submit__button">Send Message
+                                            <i class="uil uil-message button__icon"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer__rights">
-            <p class="footer__copy">&#169; 2021 Brori de Coding. All right reserved.</p>
-        </div>
-    </footer>
+            <div class="footer__rights">
+                <p class="footer__copy">&#169; 2021 Brori de Coding. All right reserved.</p>
+            </div>
+        </footer>
+    </section>
 
     <!-- ======================= SCROLL TOP ==================== -->
 
