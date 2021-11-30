@@ -8,16 +8,23 @@
     /* =========== Colors ========== */
     --hue: 174;
     --sat: 63%;
-    --very-light-brown: #FFF3E4;
-    --light-brown: #EED6C4;
-    --brown: #6B4F4F;
-    --dark-brown: #483434;
+    /* --light-color: #DBD8E3;
+    --medium-color: #5C5470;
+    --dark-color: #352F44;
+    --darker-color: #2A2438; */
+    /* Browm Color */
+    --light-color: #FFF3E4;
+    --medium-color: #EED6C4;
+    --dark-color: #6B4F4F;
+    --darker-color: #483434;
 
-    --title-color: var(--dark-brown);
-    --text-color: var(--brown);
-    --hint-color: var(--light-brown);
-    --body-color: var(--very-light-brown);
-    --container-color: #FFFF;
+    --title-color: var(--darker-color);
+    --text-color: var(--dark-color);
+    --hint-color: var(--medium-color);
+    --body-color: var(--light-color);
+    --shadow-color: rgba(0, 0, 0, 0.15);
+    --scroll-bar-color: var(--medium-color);
+    --scroll-thumb-color: var(--dark-color);
 
     /* =========== Neumorphis ========== */
     /* Text Shadow */
@@ -25,6 +32,9 @@
 
     /* 3d container */
     --neumor-container-shadow: inset 0 -4px 7px 0 rgba(0, 0, 0, 0.5), inset 0 4px 7px 0 hsla(0, 0%, 100%, 0.15), 0 -30px 75px 0 #cdb8a946, 0 30px 75px 0 #cdb8a96e;
+
+    /* Inner shadow */
+    --inner-shadow: inset 5px 5px 9px #e0d6c9, inset -5px -5px 9px #ffffff;
 
     /* Circle Button */
     --circle-btn-bg: linear-gradient(145deg, #fffff4, #e6dbcd);
@@ -100,7 +110,31 @@
 }
 
 /* =============== VARIABLE DARK THEME =============== */
+body.dark-theme {
+    /* =========== Colors ========== */
+    --title-color: var(--light-color);
+    --text-color: var(--medium-color);
+    --hint-color: var(--dark-color);
+    --body-color: var(--darker-color);
+    --shadow-color: rgba(155, 123, 123, 0.15);
+}
+
 /* =============== BUTTON DARK / LIGHT =============== */
+.nav__btns {
+    display: flex;
+    align-items: center;
+}
+
+.change-theme {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-right: var(--mb-1);
+    cursor: pointer;
+}
+
+.change-theme:hover {
+    color: var(--hint-color);
+}
 
 /* =============== BASE =============== */
 * {
@@ -219,7 +253,7 @@ img {
         width: 100%;
         background-color: var(--body-color);
         padding: 2rem 1.5rem 4rem;
-        box-shadow: 0 -1px 4px rgba(155, 123, 123, 0.15);
+        box-shadow: 0 -2px 4px var(--shadow-color);
         border-radius: 1.5rem 1.5rem 0 0;
         transition: all .4s ease;
     }
@@ -268,14 +302,13 @@ img {
 /* Active Link */
 .active-link {
     border-radius: 10px;
-    background: #FFF3E4;
-    box-shadow: inset 5px 5px 9px #e0d6c9,
-            inset -5px -5px 9px #ffffff;
+    background: var(--body-color);
+    box-shadow: var(--inner-shadow);
 }
 
 /* Change background header */
 .scroll-header {
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 -4px 6px var(--shadow-color);
 }
 
 /* ================= HOME ================= */
@@ -540,6 +573,11 @@ img {
     width: 50vw;
 }
 
+.portofolio__img {
+    border-radius: 1.6rem;
+    box-shadow: 5px 3px 6px var(--shadow-color);
+}
+
 .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right {
     background-image: none;
 }
@@ -578,7 +616,7 @@ img {
 .footer__bg {
     padding: 2rem 0;
     border-radius: 2rem;
-    background: #FFF3E4;
+    background: var(--body-color);
     box-shadow:  10px 10px 26px #ded3c6,
                 -10px -10px 26px #fdfcf8;
 }
@@ -614,7 +652,7 @@ img {
     padding: 1rem;
     margin: 0 1rem;
     border-radius: .75rem;
-    background: #FFF3E4;
+    background: var(--body-color);
     box-shadow: inset 8px 8px 16px #ded3c6,
             inset -8px -8px 16px #ffffff;
 }
