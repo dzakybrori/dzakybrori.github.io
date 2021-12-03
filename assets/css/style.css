@@ -47,6 +47,7 @@
     /* Home Image / Container */
     --home-img-bgshadow: inset 19px 19px 49px #cdb8a9, inset -19px -19px 49px #fff4df;
     --container-shadow: -18px 18px 27px #ede2d4, 18px -18px 27px #fffff4;
+    --menu-shadow:  5px 5px 10px #e8ddcf, -5px -5px 10px #fffff9;
     --footer-shadow: 18px 18px 27px #ede2d4, -18px -18px 27px #fffff4;
 
     /* About Button */
@@ -475,7 +476,7 @@ img {
 
 .about__sign {
     display: none;
-    font-size: var(--big-font-size);
+    font-size: 2rem;
     font-family: var(--ttd-font);
     margin-bottom: var(--mb-2-5);
     text-align: end;
@@ -864,6 +865,10 @@ img {
         width: 34vw;
     }
 
+    .contact__section {
+        padding-top: 2rem;
+    }
+
     .footer {
         padding: 0 2rem;
     }
@@ -944,6 +949,11 @@ img {
         padding: 0 1.5rem;
     }
 
+    /* Change background header */
+    .scroll-header {
+        box-shadow: 0 4px 6px var(--shadow-color);
+    }
+
     .nav {
         height: calc(var(--header-height) + 1.5rem);
         column-gap: 1rem;
@@ -973,7 +983,7 @@ img {
     .active-link {
         padding: .5rem;
         background: var(--body-color);
-        box-shadow: var(--circle-btn-shadow);
+        box-shadow: var(--menu-shadow);
     }
 
     .qualification .section__subtitle {
@@ -1016,11 +1026,10 @@ img {
         margin-right: auto;
         padding: 1.5rem;
         border-radius: 2rem;
-        box-shadow: var(--neumor-scroll-thumb);
     }
 
     .portofolio__container {
-        width: 610px;
+        width: 80vw;
         margin-left: auto;
         margin-right: auto;
         padding: 1.5rem 0;
@@ -1030,6 +1039,11 @@ img {
 
     .portofolio__card {
         width: 27vw;
+    }
+
+    .contact__section {
+        padding-top: 5rem;
+        padding-bottom: 1.5rem;
     }
 
     .footer__bg {
@@ -1054,15 +1068,39 @@ img {
     .footer__contact {
         grid-column: initial;
     }
+
+    .footer__rights {
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (min-width: 792px) { 
+    .home__container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .about__container {
         margin-right: auto;
     }
- }
+}
 
 /* For large device */
+@media screen and (min-width: 900px) { 
+    .footer {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+ @media screen and (min-width: 920px) { 
+    .about__container {
+        grid-template-columns: 1fr 1.2fr;
+        gap: 4rem;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .portofolio__container {
         width: 730px;
