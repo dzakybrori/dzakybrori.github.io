@@ -1,5 +1,5 @@
 /* =============== GOOGLE FONTS =============== */
-@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&family=Dawning+of+a+New+Day&family=Jost:wght@200;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&family=Dawning+of+a+New+Day&family=Jost:wght@200;300;500&family=Raleway:wght@600;800;900&display=swap');
 
 /* =============== VARIABLE CSS =============== */
 :root {
@@ -28,7 +28,7 @@
 
     /* =========== Neumorphis ========== */
     /* Text Shadow */
-    --text-shadow: -1px -1px 2px hsla(0, 0%, 100%, 0.2), 4px 4px 8px rgba(66, 65, 65, 0.116), 1px 1px 3px rgba(65, 65, 65, 0.041), 2px 2px 5px rgba(0, 0, 0, 0.4);
+    --text-shadow:-1px -1px 2px hsla(0, 4%, 73%, 0.2), 2px 2px 6px rgba(187, 187, 187, 0.25), 1px 1px 4px rgba(187, 187, 187, 0.25), 2px 2px 5px #7a5d5d56;
 
     /* 3d container */
     --neumor-container-shadow: inset 0 -4px 7px 0 rgba(0, 0, 0, 0.5), inset 0 4px 7px 0 hsla(0, 0%, 100%, 0.15), 0 -30px 75px 0 #cdb8a946, 0 30px 75px 0 #cdb8a96e;
@@ -61,7 +61,7 @@
 
     /* =========== Font and typography ========== */
     --body-font: 'Jost', sans-serif;
-    --title-font: 'Bona Nova', serif;
+    --title-font: 'Raleway', sans-serif;
     --ttd-font: 'Dawning of a New Day', cursive;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px */
@@ -128,7 +128,7 @@ body.dark-theme {
     
     /* =========== Neumorphis ========== */
     /* Text Shadow */
-    --text-shadow: -1px -1px 2px hsla(0, 0%, 100%, 0.2), 4px 4px 8px rgba(66, 65, 65, 0.116), 1px 1px 3px rgba(65, 65, 65, 0.041), 2px 2px 5px rgba(0, 0, 0, 0.4);
+    --text-shadow: -1px -1px 2px hsla(41, 68%, 65%, 0.2), 4px 4px 8px rgba(66, 65, 65, 0.116), 1px 1px 3px rgba(65, 65, 65, 0.041), 2px 2px 5px rgba(0, 0, 0, 0.4);
 
     /* 3d container */
     --neumor-container-shadow: inset 0 -4px 7px 0 rgba(51, 32, 5, 0.932), inset 0 4px 7px 0 hsla(0, 0%, 100%, 0.178), 0 -30px 75px 0 #3f2d2d5d, 0 30px 75px 0 #513b3b;
@@ -202,6 +202,7 @@ body {
 h1, h2, h3, h4 {
     color: var(--title-color);
     font-family: var(--title-font);
+    font-weight: 900;
 }
 
 ul {
@@ -218,6 +219,11 @@ a {
     -ms-transition: all 0.3s ease-in-out; /* Explorer 10 */
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -229,12 +235,12 @@ img {
 }
 
 .section__title {
-    font-size: var(--h1-font-size);
+    font-size: var(--big-font-size);
 }
 
 .section__subtitle {
     display: block;
-    font-size: var(--small-font-size);
+    font-size: var(--h3-font-size);
     margin-bottom: var(--mb-3);
 }
 
@@ -246,6 +252,15 @@ img {
     height: 100vh;
 }
 
+.neu__text,
+.hi-txt {
+    color: var(--body-color);
+    text-shadow: var(--text-shadow);
+}
+
+.neu__text {
+    font-weight: 800;
+}
 /* =============== LAYOUT =============== */
 .container {
     max-width: 768px;
@@ -281,6 +296,11 @@ img {
 .nav__toggle {
     color: var(--title-color);
     font-family: var(--title-font);
+}
+
+.nav__logo {
+    font-family: var(--ttd-font);
+    font-size: var(--h3-font-size);
 }
 
 .nav__toggle {
@@ -692,6 +712,7 @@ img {
 }
 
 .footer__subtitle {
+    font-size: var(--h3-font-size);
     margin-bottom: var(--mb-1);
 }
 
