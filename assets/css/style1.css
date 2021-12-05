@@ -8,56 +8,57 @@
     /* =========== Colors ========== */
     --hue: 174;
     --sat: 63%;
-    /* --light-color: #DBD8E3;
+    --light-color: #DBD8E3;
     --medium-color: #5C5470;
     --dark-color: #352F44;
-    --darker-color: #2A2438; */
+    --darker-color: #2A2438;
     /* Browm Color */
-    --light-color: #FFF3E4;
+    /* --light-color: #FFF3E4;
     --medium-color: #EED6C4;
     --dark-color: #6B4F4F;
-    --darker-color: #483434;
+    --darker-color: #483434; */
 
     --title-color: var(--darker-color);
     --text-color: var(--dark-color);
     --hint-color: var(--medium-color);
     --body-color: var(--light-color);
+    --text-alt-color: var(--light-color);
     --shadow-color: rgba(0, 0, 0, 0.15);
     --scroll-bar-color: var(--body-color);
     --scroll-thumb-color: var(--body-color);
 
     /* =========== Neumorphis ========== */
     /* Text Shadow */
-    --text-shadow:-1px -1px 2px hsla(0, 0%, 89%, 0.575), 2px 2px 3px rgba(187, 187, 187, 0.25), 1px 1px 2px rgba(187, 187, 187, 0.25), 2px 2px 5px #7a5d5d56;
+    --text-shadow: -1px -1px 2px #fefbff, 2px 2px 4px rgba(99, 99, 99, 0.25), 1px 1px 2px rgba(99, 99, 99, 0.25), 2px 2px 5px #b8b5bf;
 
     /* 3d container */
-    --neumor-container-shadow: inset 0 -4px 7px 0 rgba(0, 0, 0, 0.5), inset 0 4px 7px 0 hsla(0, 0%, 100%, 0.15), 0 -30px 75px 0 #cdb8a946, 0 30px 75px 0 #cdb8a96e;
+    --neumor-container-shadow: inset 0 -4px 7px 0 rgba(0, 0, 0, 0.5), inset 0 4px 7px 0 hsla(0, 0%, 100%, 0.15), 0 -30px 75px 0 #b8b5bf70, 0 30px 75px 0 #b8b5bf;
     --neumor-scroll-thumb: inset 0 -2px 4px 0 rgba(0, 0, 0, 0.5), inset 0 4px 7px 0 hsla(0, 0%, 100%, 0.15);
 
     /* Inner shadow */
-    --inner-shadow: inset 5px 5px 9px #e0d6c9, inset -5px -5px 9px #ffffff;
-    --inner-line-shadow: inset -1px -1px 3px 0 #fff, inset 1px 1px 3px 0 rgba(44, 61, 73, 0.17);
+    --inner-shadow: inset 5px 5px 18px #b8b5bf, inset -5px -5px 18px #fefbff;
+    --inner-line-shadow: inset -1px -1px 3px 0 #fff, inset 1px 1px 3px 0 rgba(77, 77, 77, 0.507);
 
     /* Circle Button */
-    --circle-btn-bg: linear-gradient(145deg, #fffff4, #e6dbcd);
-    --circle-btn-shadow:  6px 6px 14px #d6ccc0, -6px -6px 14px #ffffff;
-    --circle-btn-hbg: #FFF3E4;
-    --circle-btn-hshadow: inset 6px 6px 14px #d6ccc0, inset -6px -6px 14px #ffffff;
+    --circle-btn-bg: linear-gradient(145deg, #eae7f3, #c5c2cc);
+    --circle-btn-shadow: 6px 6px 14px #c3c0ca, -6px -6px 14px #f3f0fc;
+    --circle-btn-hbg: linear-gradient(145deg, #c5c2cc, #eae7f3);
+    --circle-btn-hshadow: inset 6px 6px 14px #c3c0ca, inset -6px -6px 14px #f3f0fc;
 
     /* Home Image / Container */
-    --home-img-bgshadow: inset 19px 19px 49px #cdb8a9, inset -19px -19px 49px #fff4df;
-    --container-shadow: -18px 18px 27px #ede2d4, 18px -18px 27px #fffff4;
-    --menu-shadow:  5px 5px 10px #e8ddcf, -5px -5px 10px #fffff9;
-    --footer-shadow: 18px 18px 27px #ede2d4, -18px -18px 27px #fffff4;
+    --home-img-bgshadow: inset -19px 19px 49px #484257, inset 19px -19px 49px #706689;
+    --container-shadow: -18px 18px 38px #c3c0ca, 22px -20px 38px #f3f0fc;
+    --menu-shadow:  5px 5px 16px #b8b5bf, -5px -5px 16px #fefbff;
+    --footer-shadow: 18px 18px 53px #c5c2cc, -18px -18px 53px #f1eefa;
 
     /* About Button */
-    --about-btn-bg: linear-gradient(170deg, #ffe5d2, #d6c1b0);
-    --about-btn-shadow: 16px 16px 32px #d6c1b0, -16px -16px 32px #ffebd8;
+    --about-btn-bg: linear-gradient(170deg, #625a78, #534c65);
+    --about-btn-shadow: 16px 16px 32px #534c65, -16px -16px 32px #655c7b;
 
     /* Qualification */
-    --qualification-left-shadow: -8px -6px 12px #fffff4, -8px 6px 12px #e8ddcf;
-    --qualification-right-shadow: 8px 6px 12px #e8ddcf, 8px -6px 12px #fffff4;
-    --qualification-rounder-shadow: 8px 8px 16px #d9cfc2, -8px -8px 16px #ffffff;
+    --qualification-left-shadow: -8px -6px 12px #eae7f3, -8px 6px 12px #ccc9d3;
+    --qualification-right-shadow: 8px 6px 12px #ccc9d3, 8px -6px 12px #eae7f3;
+    --qualification-rounder-shadow: 8px 8px 20px #b6b3bc, -8px -8px 20px #fffdff;
 
     /* =========== Font and typography ========== */
     --body-font: 'Jost', sans-serif;
@@ -118,9 +119,10 @@
 body.dark-theme {
     /* =========== Colors ========== */
     --title-color: var(--light-color);
-    --text-color: var(--medium-color);
+    --text-color: var(--light-color);
     --hint-color: var(--dark-color);
     --body-color: var(--darker-color);
+    --text-alt-color: var(--darker-color);
     --shadow-color: rgba(155, 123, 123, 0.15);
     --scroll-bar-color: var(--body-color);
     --scroll-thumb-color: var(--body-color);
@@ -128,38 +130,37 @@ body.dark-theme {
     
     /* =========== Neumorphis ========== */
     /* Text Shadow */
-    --text-shadow: -1px -1px 2px hsla(41, 68%, 65%, 0.2), 4px 4px 8px rgba(66, 65, 65, 0.116), 1px 1px 3px rgba(65, 65, 65, 0.041), 2px 2px 5px rgba(0, 0, 0, 0.4);
+    --text-shadow: -1px -1px 2px hsla(0, 0%, 77%, 0.2), 4px 4px 8px rgba(66, 65, 65, 0.116), 1px 1px 3px rgba(65, 65, 65, 0.041), 2px 2px 5px rgba(0, 0, 0, 0.4);
 
     /* 3d container */
-    --neumor-container-shadow: inset 0 -4px 7px 0 rgba(51, 32, 5, 0.932), inset 0 4px 7px 0 hsla(0, 0%, 100%, 0.178), 0 -30px 75px 0 #3f2d2d5d, 0 30px 75px 0 #513b3b;
+    --neumor-container-shadow: inset 0 -4px 7px 0 rgb(26, 25, 25), inset 0 4px 7px 0 hsla(0, 0%, 100%, 0.178), 0 -30px 75px 0 #3a334a77, 0 30px 75px 0 #322a42;
     --neumor-scroll-thumb: inset 0 -2px 4px 0 rgba(0, 0, 0, 0.5), inset 0 4px 7px 0 hsla(0, 0%, 100%, 0.15);
 
     /* Inner shadow */
-    --inner-shadow: inset 7px 7px 19px #3c2c2c,
-    inset -7px -7px 19px #543c3c;
+    --inner-shadow: inset 7px 7px 19px #221d2d,
+    inset -7px -7px 19px #322b43;
     --inner-line-shadow: inset -1px -1px 3px 0 rgba(255, 255, 255, 0.281), inset 1px 1px 3px 0 rgba(44, 61, 73, 0.17);
 
     /* Circle Button */
-    --circle-btn-bg: linear-gradient(145deg, #4d3838, #412f2f);
-    --circle-btn-shadow:  6px 6px 14px #3f2d2d, -6px -6px 14px #513b3b;
-    --circle-btn-hbg: var(--body-color);
-    --circle-btn-hshadow: inset 6px 6px 14px #3f2d2d, inset -6px -6px 14px #513b3b;
+    --circle-btn-bg: linear-gradient(145deg, #2d273c, #262032);
+    --circle-btn-shadow: 6px 6px 14px #241f30, -6px -6px 14px #302940;
+    --circle-btn-hbg: linear-gradient(145deg, #262032, #2d273c);
+    --circle-btn-hshadow: inset 6px 6px 14px #1c1826, inset -6px -6px 14px #38304a;
 
     /* Home Image / Container */
-    --home-img-bgshadow: inset -18px 18px 27px #624949,inset 18px -18px 27px #745555;
-    --container-shadow: -18px 18px 27px #423030, 18px -18px 27px #4e3838;
-    --menu-shadow: 5px 5px 13px #372828, -5px -5px 13px #594040;
-    --footer-shadow: 18px 18px 27px #402e2e, -18px -18px 27px #503a3a;
+    --home-img-bgshadow: inset -18px 18px 27px #302b3e, inset 18px -18px 27px #3a334a;
+    --container-shadow: -18px 18px 38px #241f30, 22px -20px 38px #302940;
+    --menu-shadow: 5px 5px 13px #1c1826, -5px -5px 13px #38304a;
+    --footer-shadow: 16px 16px 34px #241f30, -16px -16px 34px #302940;
 
     /* About Button */
-    --about-btn-bg: linear-gradient(170deg, #725555, #604747);
-    --about-btn-shadow: 16px 16px 28px #624949, -16px -16px 28px #745555;
+    --about-btn-bg: linear-gradient(170deg, #393249, #302a3d);
+    --about-btn-shadow: 10px 10px 21px #2f293c, -10px -10px 21px #3b354c;
 
     /* Qualification */
-    --qualification-left-shadow: -8px -6px 12px #543d3d, -8px 6px 12px #3c2b2b;
-    --qualification-right-shadow: 8px 6px 12px #3c2b2b, 8px -6px 12px #543d3d;
-    --qualification-rounder-shadow: 6px 6px 9px #3c2b2b,
-    -6px -6px 9px #543d3d;
+    --qualification-left-shadow: -8px -6px 12px #322a42, -8px 6px 12px #221e2e;
+    --qualification-right-shadow: 8px 6px 12px #221e2e, 8px -6px 12px #322a42;
+    --qualification-rounder-shadow: 6px 6px 11px #1b1724, -6px -6px 11px #39314c;
 }
 
 /* =============== BUTTON DARK / LIGHT =============== */
@@ -491,7 +492,7 @@ img {
 }
 
 .button:hover {
-    color: var(--text-color);
+    color: var(--text-alt-color);
     background-color: var(--hint-color);
 }
 
@@ -521,6 +522,7 @@ img {
 .about__data {
     border-radius: 1rem;
     padding: 1.5rem;
+    color: var(--light-color);
     background: var(--hint-color);
     box-shadow: var(--neumor-container-shadow);
 }
@@ -548,13 +550,12 @@ img {
 .about__buttons .button {
     padding: 1rem 1.5rem;
     border-radius: 5000px;
-    color: var(--text-color);
+    color: var(--light-color);
     background: var(--about-btn-bg);
     box-shadow: var(--about-btn-shadow);
 }
 
 .about__buttons .button:hover {
-    color: var(--text-color);
     background: var(--hint-color);
     box-shadow: none;
 }
@@ -746,6 +747,7 @@ img {
     position: fixed;
     right: 1rem;
     bottom: -20%;
+    color: var(--light-color);
     background-color: var(--hint-color);
     box-shadow: var(--neumor-container-shadow);
     padding: 0 .3rem;
@@ -755,7 +757,7 @@ img {
 }
 
 .scrollup:hover {
-    color: var(--body-color);
+    color: var(--text-alt-color);
     background-color: var(--text-color);
 }
 
