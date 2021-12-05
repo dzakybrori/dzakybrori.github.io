@@ -53,7 +53,7 @@
 
     /* About Button */
     --about-btn-bg: linear-gradient(170deg, #625a78, #534c65);
-    --about-btn-shadow: 16px 16px 32px #534c65, -16px -16px 32px #655c7b;
+    --about-btn-shadow: 14px 16px 26px #514a63, -14px -16px 26px #675e7d;
 
     /* Qualification */
     --qualification-left-shadow: -8px -6px 12px #eae7f3, -8px 6px 12px #ccc9d3;
@@ -130,7 +130,7 @@ body.dark-theme {
     
     /* =========== Neumorphis ========== */
     /* Text Shadow */
-    --text-shadow: -1px -1px 2px hsla(0, 0%, 77%, 0.2), 4px 4px 8px rgba(66, 65, 65, 0.116), 1px 1px 3px rgba(65, 65, 65, 0.041), 2px 2px 5px rgba(0, 0, 0, 0.4);
+    --text-shadow: -1px -1px 2px hsla(0, 0%, 87%, 0.233), 4px 4px 8px rgba(66, 65, 65, 0.116), 1px 1px 3px rgba(65, 65, 65, 0.041), 2px 2px 5px rgba(0, 0, 0, 0.4);
 
     /* 3d container */
     --neumor-container-shadow: inset 0 -4px 7px 0 rgb(26, 25, 25), inset 0 4px 7px 0 hsla(0, 0%, 100%, 0.178), 0 -30px 75px 0 #3a334a77, 0 30px 75px 0 #322a42;
@@ -155,7 +155,7 @@ body.dark-theme {
 
     /* About Button */
     --about-btn-bg: linear-gradient(170deg, #393249, #302a3d);
-    --about-btn-shadow: 10px 10px 21px #2f293c, -10px -10px 21px #3b354c;
+    --about-btn-shadow: 14px 16px 26px #2e283a, -14px -16px 26px #3c364e;
 
     /* Qualification */
     --qualification-left-shadow: -8px -6px 12px #322a42, -8px 6px 12px #221e2e;
