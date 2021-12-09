@@ -163,6 +163,25 @@ body.dark-theme {
     --qualification-rounder-shadow: 6px 6px 11px #1b1724, -6px -6px 11px #39314c;
 }
 
+/* =============== Animation =============== */
+@keyframes floatingUp {
+    0%, 100% {
+        transform: translateY(0rem);
+    }
+    50% {
+        transform: translateY(-1rem);
+    }
+}
+
+@keyframes floatingDown {
+    0%, 100% {
+        transform: translateY(0rem);
+    }
+    50% {
+        transform: translateY(1rem);
+    }
+}
+
 /* =============== BUTTON DARK / LIGHT =============== */
 .nav__btns {
     display: flex;
@@ -514,9 +533,6 @@ img {
 
 .about__img {
     width: 350px;
-    border-radius: .5rem;
-    justify-self: center;
-    align-self: center;
 }
 
 .img-container-1,
@@ -525,6 +541,9 @@ img {
 .img-container-4 {
     grid-column: 1;
     grid-row: 1;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
 }
 
 .img-container-1 {
@@ -532,14 +551,17 @@ img {
 }
 
 .img-container-2 {
+    animation: floatingUp 4s ease infinite;
     z-index: 2;
 }
 
 .img-container-3 {
+    animation: floatingDown 3.5s ease infinite;
     z-index: 2;
 }
 
 .img-container-4 {
+    animation: floatingDown 4.5s ease infinite;
     z-index: 2;
 }
 
