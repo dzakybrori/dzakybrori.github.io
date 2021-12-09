@@ -8,15 +8,15 @@
     /* =========== Colors ========== */
     --hue: 174;
     --sat: 63%;
-    --light-color: #DBD8E3;
+    /* --light-color: #DBD8E3;
     --medium-color: #5C5470;
     --dark-color: #352F44;
-    --darker-color: #2A2438;
+    --darker-color: #2A2438; */
     /* Browm Color */
-    /* --light-color: #FFF3E4;
-    --medium-color: #EED6C4;
-    --dark-color: #6B4F4F;
-    --darker-color: #483434; */
+    --light-color: #E4E4E4;
+    --medium-color: #044343;
+    --dark-color: #045757;
+    --darker-color: #222222;
 
     --title-color: var(--darker-color);
     --text-color: var(--dark-color);
@@ -517,6 +517,30 @@ img {
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
+}
+
+.img-container-1,
+.img-container-2,
+.img-container-3,
+.img-container-4 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.img-container-1 {
+    z-index: 1;
+}
+
+.img-container-2 {
+    z-index: 2;
+}
+
+.img-container-3 {
+    z-index: 2;
+}
+
+.img-container-4 {
+    z-index: 2;
 }
 
 .about__data {
