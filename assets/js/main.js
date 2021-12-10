@@ -29,6 +29,27 @@ function linkAction() {
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+/*============== ANIMATED TEXT ==============*/
+const texts = document.querySelector(".animated-text").children,
+      textsLength = texts.length
+let index = 0
+
+function animateText() {
+    for (let i = 0; i < textsLength; i++) {
+        texts[i].classList.remove("text-in")
+    }
+    texts[index].classList.add("text-in")
+    if (index == textsLength - 1) {
+        index = 0;
+    } else {
+        index++;
+    }
+
+    setTimeout(animateText, 2000)
+}
+
+window.onload = animateText
+
 /*======================= PORTOFOLIO SWIPER ======================*/
 var swiper = new Swiper(".portofolio__container", {
     effect: "coverflow",

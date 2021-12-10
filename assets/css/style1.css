@@ -1,5 +1,5 @@
 /* =============== GOOGLE FONTS =============== */
-@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&family=Dawning+of+a+New+Day&family=Jost:wght@200;300;500&family=Raleway:wght@600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Jost:wght@200;300;500&family=Raleway:wght@600;800;900&display=swap');
 
 /* =============== VARIABLE CSS =============== */
 :root {
@@ -179,6 +179,15 @@ body.dark-theme {
     }
     50% {
         transform: translateY(1rem);
+    }
+}
+
+@keyframes textIn {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
     }
 }
 
@@ -432,6 +441,7 @@ img {
 
 .home__title {
     font-size: var(--big-font-size);
+    display: flex;
 }
 
 .home__subtitle {
@@ -439,10 +449,20 @@ img {
     color: var(--text-color);
     font-weight: var(--font-light);
     margin-bottom: var(--mb-0-75);
+    overflow: hidden;
 }
 
 .home__description {
     margin-bottom: var(--mb-1-5);
+}
+
+.animated-text span {
+    display: none;
+}
+
+.animated-text span.text-in {
+    display: block;
+    animation: textIn .5s ease;
 }
 
 .home__scroll {
