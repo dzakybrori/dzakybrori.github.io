@@ -171,3 +171,101 @@ gsap.from(".scale-hero", {
     duration: 1,
     ease: Back.easeOut.config(1.7)
 })
+
+gsap.from(".about__title", {
+    scrollTrigger: {
+        trigger: '.about__title',
+        start: "top bottom"
+    },
+    scale: 0.1,
+    duration: 1.2,
+    ease: Power4.easeOut
+})
+
+gsap.from(".img-container", {
+    scrollTrigger: {
+        trigger: '.about__title',
+        start: "top center"
+    },
+    x: -50,
+    opacity: 0,
+    duration: 2,
+    ease: Power4.easeOut
+})
+
+gsap.from(".about__data", {
+    scrollTrigger: {
+        trigger: '.about__title',
+        start: "top center"
+    },
+    x: 50,
+    opacity: 0,
+    duration: 2,
+    ease: Power4.easeOut
+})
+
+gsap.from(".q-title", {
+    scrollTrigger: {
+        trigger: '.qualification',
+        start: "top center"
+    },
+    scale: 0.1,
+    duration: 1.2,
+    ease: Power4.easeOut
+})
+
+gsap.from(".q-square", {
+    scrollTrigger: {
+        trigger: '.qualification',
+        start: "top center"
+    },
+    scale: 0.1,
+    duration: 2,
+    stagger: .3,
+    ease: Power4.easeOut
+})
+
+gsap.from(".porto-title", {
+    scrollTrigger: {
+        trigger: '.portofolio',
+        start: "top center"
+    },
+    scale: 0.1,
+    duration: 2,
+    ease: Power4.easeOut
+})
+
+gsap.from(".portofolio__container", {
+    scrollTrigger: {
+        trigger: '.portofolio',
+        start: "top center"
+    },
+    y: 50,
+    opacity: 0,
+    duration: 3,
+    stagger: 1,
+    ease: Power4.easeOut
+})
+
+gsap.from(".footer__bg", {
+    scrollTrigger: {
+        trigger: '.contact__section',
+        start: "top center"
+    },
+    y: 50,
+    opacity: 0,
+    duration: 2,
+    stagger: .3,
+    ease: Power4.easeOut
+})
+
+gsap.from(".footer__header", {
+    scrollTrigger: {
+        trigger: '.contact__section',
+        start: "top center"
+    },
+    scale: 0.1,
+    duration: 2,
+    stagger: .3,
+    ease: Power4.easeOut
+})
