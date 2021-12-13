@@ -29,7 +29,7 @@ function linkAction() {
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*============== ANIMATED TEXT ==============*/
+/*=========================== ANIMATED TEXT =======================*/
 const texts = document.querySelector(".animated-text").children,
       textsLength = texts.length
 let index = 0

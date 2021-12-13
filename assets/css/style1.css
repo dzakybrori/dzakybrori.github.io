@@ -20,45 +20,47 @@
 
     --title-color: var(--darker-color);
     --text-color: var(--dark-color);
+    --text-alt-color: var(--light-color);
     --hint-color: var(--medium-color);
     --body-color: var(--light-color);
-    --text-alt-color: var(--light-color);
     --shadow-color: rgba(0, 0, 0, 0.15);
     --scroll-bar-color: var(--body-color);
     --scroll-thumb-color: var(--body-color);
 
     /* =========== Neumorphis ========== */
     /* Text Shadow */
-    --text-shadow: -1px -1px 2px #fefbff, 2px 2px 4px rgba(99, 99, 99, 0.25), 1px 1px 2px rgba(99, 99, 99, 0.25), 2px 2px 5px #b8b5bf;
+    --text-shadow: -1px -1px 2px #ffffff, 2px 2px 4px rgba(99, 99, 99, 0.25), 1px 1px 2px rgba(99, 99, 99, 0.25), 2px 2px 5px #c0c0c0;
 
     /* 3d container */
-    --neumor-container-shadow: inset 0 -4px 7px 0 rgba(0, 0, 0, 0.5), inset 0 4px 7px 0 hsla(0, 0%, 100%, 0.15), 0 -30px 75px 0 #b8b5bf70, 0 30px 75px 0 #b8b5bf;
-    --neumor-scroll-thumb: inset 0 -2px 4px 0 rgba(0, 0, 0, 0.5), inset 0 4px 7px 0 hsla(0, 0%, 100%, 0.15);
+    --neumor-container-shadow: inset 0 -4px 7px 0 rgba(0, 0, 0, 0.7), inset 0 4px 7px 0 hsla(139, 15%, 80%, 0.5), 0 -30px 75px 0 #739b9b2f, 0 30px 75px 0 #0443433b;
+    --neumor-scroll-thumb: inset 0 -2px 4px 0 rgba(0, 0, 0, 0.6), inset 0 4px 7px 0 hsla(0, 0%, 100%, 0.2);
 
     /* Inner shadow */
-    --inner-shadow: inset 5px 5px 18px #b8b5bf, inset -5px -5px 18px #fefbff;
-    --inner-line-shadow: inset -1px -1px 3px 0 #fff, inset 1px 1px 3px 0 rgba(77, 77, 77, 0.507);
+    --inner-shadow: inset 5px 5px 12px #cbcbcb,
+    inset -5px -5px 12px #fdfdfd;
+    --inner-line-shadow: inset -1px -1px 3px 0 #fff, inset 1px 1px 3px 0 rgba(0, 0, 0, 0.4);
 
     /* Circle Button */
-    --circle-btn-bg: linear-gradient(145deg, #eae7f3, #c5c2cc);
-    --circle-btn-shadow: 6px 6px 14px #c3c0ca, -6px -6px 14px #f3f0fc;
-    --circle-btn-hbg: linear-gradient(145deg, #c5c2cc, #eae7f3);
-    --circle-btn-hshadow: inset 6px 6px 14px #c3c0ca, inset -6px -6px 14px #f3f0fc;
+    --circle-btn-bg: linear-gradient(145deg, #f4f4f4, #cdcdcd);
+    --circle-btn-shadow: 6px 6px 14px #c9c9c9, -6px -6px 14px #ffffff;
+    --circle-btn-hbg: linear-gradient(145deg, #cdcdcd, #f4f4f4);
+    --circle-btn-hshadow: inset 6px 6px 14px #d6d6d6, inset -6px -6px 14px #f2f2f2;
 
     /* Home Image / Container */
-    --home-img-bgshadow: inset -19px 19px 49px #484257, inset 19px -19px 49px #706689;
-    --container-shadow: -18px 18px 38px #c3c0ca, 22px -20px 38px #f3f0fc;
-    --menu-shadow:  5px 5px 16px #b8b5bf, -5px -5px 16px #fefbff;
-    --footer-shadow: 18px 18px 53px #c5c2cc, -18px -18px 53px #f1eefa;
+    --home-img-bgshadow: inset 19px 19px 28px #033434,
+    inset -19px -19px 28px #055252;
+    --container-shadow: -18px 18px 38px #d2d2d2, 22px -20px 38px #f6f6f6;
+    --menu-shadow: 5px 5px 12px #c9c9c9, -5px -5px 12px #ffffff;
+    --footer-shadow: 18px 18px 50px #d2d2d2, -18px -18px 50px #f6f6f6;
 
     /* About Button */
-    --about-btn-bg: linear-gradient(170deg, #625a78, #534c65);
-    --about-btn-shadow: 14px 16px 26px #514a63, -14px -16px 26px #675e7d;
+    --about-btn-bg: linear-gradient(170deg, #055050, #033636);
+    --about-btn-shadow: 16px 15px 22px #033636, -16px -15px 22px #055050;
 
     /* Qualification */
-    --qualification-left-shadow: -8px -6px 12px #eae7f3, -8px 6px 12px #ccc9d3;
-    --qualification-right-shadow: 8px 6px 12px #ccc9d3, 8px -6px 12px #eae7f3;
-    --qualification-rounder-shadow: 8px 8px 20px #b6b3bc, -8px -8px 20px #fffdff;
+    --qualification-left-shadow: -8px -6px 12px #f4f4f4, -8px 6px 12px #d4d4d4;
+    --qualification-right-shadow: 8px 6px 12px #d4d4d4, 8px -6px 12px #f4f4f4;
+    --qualification-rounder-shadow: 8px 8px 20px #c6c6c6, -8px -8px 20px #ffffff;
 
     /* =========== Font and typography ========== */
     --body-font: 'Jost', sans-serif;
@@ -130,37 +132,36 @@ body.dark-theme {
     
     /* =========== Neumorphis ========== */
     /* Text Shadow */
-    --text-shadow: -1px -1px 2px hsla(0, 0%, 87%, 0.233), 4px 4px 8px rgba(66, 65, 65, 0.116), 1px 1px 3px rgba(65, 65, 65, 0.041), 2px 2px 5px rgba(0, 0, 0, 0.4);
+    --text-shadow: -1px -1px 2px hsla(0, 0%, 100%, 0.3), 4px 4px 8px rgba(70, 70, 70, 0.2), 1px 1px 3px rgba(70, 70, 70, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.9);
 
     /* 3d container */
-    --neumor-container-shadow: inset 0 -4px 7px 0 rgb(26, 25, 25), inset 0 4px 7px 0 hsla(0, 0%, 100%, 0.178), 0 -30px 75px 0 #3a334a77, 0 30px 75px 0 #322a42;
-    --neumor-scroll-thumb: inset 0 -2px 4px 0 rgba(0, 0, 0, 0.5), inset 0 4px 7px 0 hsla(0, 0%, 100%, 0.15);
+    --neumor-container-shadow: inset 0 -4px 7px 0 rgb(4, 34, 24), inset 0 4px 7px 0 hsla(0, 0%, 100%, 0.26), 0 -30px 75px 0 #0457571e, 0 30px 75px 0 #0457572d;
+    --neumor-scroll-thumb: inset 0 -2px 4px 0 rgba(0, 0, 0, 0.9), inset 0 4px 7px 0 hsla(0, 0%, 100%, 0.3);
 
     /* Inner shadow */
-    --inner-shadow: inset 7px 7px 19px #221d2d,
-    inset -7px -7px 19px #322b43;
-    --inner-line-shadow: inset -1px -1px 3px 0 rgba(255, 255, 255, 0.281), inset 1px 1px 3px 0 rgba(44, 61, 73, 0.17);
+    --inner-shadow: inset 7px 7px 19px #181818, inset -7px -7px 19px #2c2c2c;
+    --inner-line-shadow: inset -1px -1px 3px 0 rgba(255, 255, 255, 0.3), inset 1px 1px 3px 0 rgba(5, 48, 37, 0.9);
 
     /* Circle Button */
-    --circle-btn-bg: linear-gradient(145deg, #2d273c, #262032);
-    --circle-btn-shadow: 6px 6px 14px #241f30, -6px -6px 14px #302940;
-    --circle-btn-hbg: linear-gradient(145deg, #262032, #2d273c);
-    --circle-btn-hshadow: inset 6px 6px 14px #1c1826, inset -6px -6px 14px #38304a;
+    --circle-btn-bg: linear-gradient(145deg, #2e2e2e, #161616);
+    --circle-btn-shadow: 6px 6px 14px #161616, -6px -6px 14px #2e2e2e;
+    --circle-btn-hbg: linear-gradient(145deg, #151515, #2f2f2f);
+    --circle-btn-hshadow: inset 6px 6px 14px #151515, inset -6px -6px 14px #2f2f2f;
 
     /* Home Image / Container */
-    --home-img-bgshadow: inset -18px 18px 27px #302b3e, inset 18px -18px 27px #3a334a;
-    --container-shadow: -18px 18px 38px #241f30, 22px -20px 38px #302940;
-    --menu-shadow: 5px 5px 13px #1c1826, -5px -5px 13px #38304a;
-    --footer-shadow: 16px 16px 34px #241f30, -16px -16px 34px #302940;
+    --home-img-bgshadow: inset 18px 18px 27px #033b3b, inset -18px -18px 27px #057373;
+    --container-shadow: -18px 18px 38px #1c1c1c, 22px -20px 38px #282828;
+    --menu-shadow: 5px 5px 13px #141414, -5px -5px 13px #303030;
+    --footer-shadow: 16px 16px 34px #1c1c1c, -16px -16px 34px #282828;
 
     /* About Button */
-    --about-btn-bg: linear-gradient(170deg, #393249, #302a3d);
-    --about-btn-shadow: 14px 16px 26px #2e283a, -14px -16px 26px #3c364e;
+    --about-btn-bg: linear-gradient(170deg, #056868, #034646);
+    --about-btn-shadow: 16px 15px 24px #034646, -16px -15px 24px #056868;
 
     /* Qualification */
-    --qualification-left-shadow: -8px -6px 12px #322a42, -8px 6px 12px #221e2e;
-    --qualification-right-shadow: 8px 6px 12px #221e2e, 8px -6px 12px #322a42;
-    --qualification-rounder-shadow: 6px 6px 11px #1b1724, -6px -6px 11px #39314c;
+    --qualification-left-shadow: -8px -6px 12px #2c2c2c, -8px 6px 12px #181818;
+    --qualification-right-shadow: 8px 6px 12px #181818, 8px -6px 12px #2c2c2c;
+    --qualification-rounder-shadow: 6px 6px 11px #131313, -6px -6px 11px #313131;
 }
 
 /* =============== Animation =============== */
