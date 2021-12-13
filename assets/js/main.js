@@ -165,6 +165,13 @@ tl.from('.stagger1-2', {
     ease: Power4.ease
 }, "-=1.5")
 
+gsap.from(".nav__btns", {
+    x: 50,
+    opacity: 0,
+    duration: 2,
+    ease: Power4.easeOut
+})
+
 gsap.from(".scale-hero", {
     stagger: .5,
     scale: 0.1,

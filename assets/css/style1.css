@@ -204,6 +204,7 @@ body.dark-theme {
 .nav__btns {
     display: flex;
     align-items: center;
+    z-index: 0;
 }
 
 .change-theme {
@@ -398,6 +399,7 @@ img {
 /* Show Menu */
 .show-menu {
     bottom: 0;
+    z-index: var(--z-modal);
 }
 
 /* Active Link */
