@@ -166,9 +166,9 @@ tl.from('.stagger1-2', {
 }, "-=1.5")
 
 gsap.from(".scale-hero", {
-    stagger: .2,
+    stagger: .5,
     scale: 0.1,
-    duration: 1,
+    duration: 2,
     ease: Back.easeOut.config(1.7)
 })
 
