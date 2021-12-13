@@ -26,6 +26,10 @@
     --shadow-color: rgba(0, 0, 0, 0.15);
     --scroll-bar-color: var(--body-color);
     --scroll-thumb-color: var(--body-color);
+    --button-color: var(--medium-color);
+    --on-button-color: var(--light-color);
+    --button-hover-color: var(--dark-color);
+    --on-button-hover-color: var(--light-color);
 
     /* =========== Neumorphis ========== */
     /* Text Shadow */
@@ -128,6 +132,10 @@ body.dark-theme {
     --shadow-color: rgba(155, 123, 123, 0.15);
     --scroll-bar-color: var(--body-color);
     --scroll-thumb-color: var(--body-color);
+    --button-color: var(--dark-color);
+    --on-button-color: var(--light-color);
+    --button-hover-color: var(--medium-color);
+    --on-button-hover-color: var(--light-color);
 
     
     /* =========== Neumorphis ========== */
@@ -522,8 +530,8 @@ img {
 /* ============== BUTTON =============== */
 .button {
     display: inline-block;
-    background-color: var(--text-color);
-    color: var(--body-color);
+    background-color: var(--button-color);
+    color: var(--on-button-color);
     padding: 1rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
@@ -532,8 +540,8 @@ img {
 }
 
 .button:hover {
-    color: var(--text-alt-color);
-    background-color: var(--hint-color);
+    color: var(--on-button-hover-color);
+    background-color: var(--button-hover-color);
 }
 
 .button__icon {
