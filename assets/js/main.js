@@ -137,9 +137,17 @@ var tl = gsap.timeline()
 tl.from('.home__data', {
     y: '-40%',
     opacity: 0,
-    duration: 2,
+    duration: 1.5,
     ease: Power4.easeOut
 })
+
+tl.from('.stagger-nav', {
+    x: '-100%',
+    opacity: 0,
+    stagger: .3,
+    duration: 1.5,
+    ease: Power4.easeOut
+}, "-=1.5")
 
 tl.from('.stagger1', {
     y: -50,
@@ -157,9 +165,9 @@ tl.from('.stagger1-2', {
     ease: Power4.ease
 }, "-=1.5")
 
-gsap.from(".home__social-icon", {
+gsap.from(".scale-hero", {
     stagger: .2,
     scale: 0.1,
-    duration: 2,
+    duration: 1,
     ease: Back.easeOut.config(1.7)
 })
