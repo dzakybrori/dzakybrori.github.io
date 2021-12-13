@@ -22,26 +22,26 @@
     <!-- ======================= HEADER ==================== -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">Dzaky Brori</a>
+            <a href="#" class="nav__logo stagger-nav">Dzaky Brori</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
-                    <li class="nav__item">
+                    <li class="nav__item stagger-nav">
                         <a href="#home" class="nav__link active-link">
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
-                    <li class="nav__item">
+                    <li class="nav__item stagger-nav">
                         <a href="#about" class="nav__link">
                             <i class="uil uil-user nav__icon"></i> About
                         </a>
                     </li>
-                    <li class="nav__item">
+                    <li class="nav__item stagger-nav">
                         <a href="#portofolio" class="nav__link">
                             <i class="uil uil-scenery nav__icon"></i> Portofolio
                         </a>
                     </li>
-                    <li class="nav__item">
+                    <li class="nav__item stagger-nav">
                         <a href="#contact" class="nav__link">
                             <i class="uil uil-message nav__icon"></i> Contact
                         </a>
@@ -50,7 +50,7 @@
                 <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
 
-            <div class="nav__btns">
+            <div class="nav__btns stagger-nav">
                 <!-- Change theme button -->
                 <i class="uil uil-moon change-theme" id="theme-button"></i>
 
@@ -86,20 +86,20 @@
                     </div>
 
                     <div class="home__data">
-                        <h1 class="home__title"><span class="hi-txt">Hi,</span>&nbsp;I'm Dzaky Brori</h1>
-                        <h3 class="home__subtitle animated-text">
+                        <h1 class="home__title stagger1"><span class="hi-txt">Hi,</span>&nbsp;I'm Dzaky Brori</h1>
+                        <h3 class="home__subtitle animated-text stagger1">
                             <span>me.myJob</span>
                             <span>Flutter Developer</span>
                             <span>Android Developer</span>
                             <span>Mobile Developer</span>
                         </h3>
-                        <p class="home__description">An experienced Mobile App Developer. Providing you with the tools & skills needed to turn your idea into a masterpiece.</p>
-                        <a href="#contact" class="button button--flex">
+                        <p class="home__description stagger1">An experienced Mobile App Developer. Providing you with the tools & skills needed to turn your idea into a masterpiece.</p>
+                        <a href="#contact" class="button button--flex stagger1-2">
                             Contact Me <i class="uil uil-message button__icon"></i></a>
                     </div>
                 </div>
 
-                <div class="home__scroll">
+                <div class="home__scroll stagger1-2">
                     <a href="#about" class="home__scroll-button button--flex">
                         <i class="uil uil-mouse-alt home__scroll-mouse"></i>
                         <span class="home__scroll-name">Scroll down</span>
@@ -419,6 +419,10 @@
     <a href="#" class="scrollup" id="scroll-up">
         <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
+
+    <!-- ====================== ANIMATION ===================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- ======================= SWIPER JS ==================== -->
     <script src="assets/js/swiper-bundle.min.js"></script>
