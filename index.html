@@ -10,6 +10,9 @@
     <!-- ======================= UNICONS ==================== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
+    <!-- ==================== ANIMATED ON SCROLL ================= -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- ======================= SWIPER CSS ==================== -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
@@ -22,26 +25,51 @@
     <!-- ======================= HEADER ==================== -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo stagger-nav">Dzaky Brori</a>
+            <a href="#" class="nav__logo stagger-nav"
+                data-aos="fade-right"
+                data-aos-offset="0"
+                data-aos-mirror="false"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-bottom">Dzaky Brori</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
-                    <li class="nav__item stagger-nav">
+                    <li class="nav__item stagger-nav"
+                        data-aos="fade-right"
+                        data-aos-offset="0"
+                        data-aos-delay="200"
+                        data-aos-mirror="false"
+                        data-aos-once="true">
                         <a href="#home" class="nav__link active-link">
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
-                    <li class="nav__item stagger-nav">
+                    <li class="nav__item stagger-nav"
+                        data-aos="fade-right"
+                        data-aos-offset="0"
+                        data-aos-delay="300"
+                        data-aos-mirror="false"
+                        data-aos-once="true">
                         <a href="#about" class="nav__link">
                             <i class="uil uil-user nav__icon"></i> About
                         </a>
                     </li>
-                    <li class="nav__item stagger-nav">
+                    <li class="nav__item stagger-nav"
+                        data-aos="fade-right"
+                        data-aos-offset="0"
+                        data-aos-delay="400"
+                        data-aos-mirror="false"
+                        data-aos-once="true">
                         <a href="#portofolio" class="nav__link">
                             <i class="uil uil-scenery nav__icon"></i> Portofolio
                         </a>
                     </li>
-                    <li class="nav__item stagger-nav">
+                    <li class="nav__item stagger-nav"
+                        data-aos="fade-right"
+                        data-aos-offset="0"
+                        data-aos-delay="500"
+                        data-aos-mirror="false"
+                        data-aos-once="true">
                         <a href="#contact" class="nav__link">
                             <i class="uil uil-message nav__icon"></i> Contact
                         </a>
@@ -50,7 +78,13 @@
                 <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
 
-            <div class="nav__btns">
+            <div class="nav__btns"
+                data-aos="fade-left"
+                data-aos-offset="0"
+                data-aos-delay="50"
+                data-aos-mirror="false"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-bottom">
                 <!-- Change theme button -->
                 <i class="uil uil-moon change-theme" id="theme-button"></i>
 
@@ -68,24 +102,44 @@
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
-                        <a href="https://bit.ly/3p1YajQ" target="_blank" class="home__social-icon scale-hero">
+                        <a href="https://bit.ly/3p1YajQ" target="_blank" class="home__social-icon scale-hero" 
+                        data-aos="zoom-in-down" 
+                        data-aos-offset="0"
+                        data-aos-delay="50"
+                        data-aos-easing="ease-out-back"
+                        data-aos-anchor-placement="top-bottom">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
-                        <a href="https://bit.ly/3l9ZRdJ" target="_blank" class="home__social-icon scale-hero">
+                        <a href="https://bit.ly/3l9ZRdJ" target="_blank" class="home__social-icon scale-hero" 
+                        data-aos="zoom-in-down"
+                        data-aos-offset="0"
+                        data-aos-delay="100"
+                        data-aos-easing="ease-out-back"
+                        data-aos-anchor-placement="top-bottom">
                             <i class="uil uil-google-play"></i>
                         </a>
-                        <a href="https://github.com/dzakybrori" target="_blank" class="home__social-icon scale-hero">
+                        <a href="https://github.com/dzakybrori" target="_blank" class="home__social-icon scale-hero" 
+                        data-aos="zoom-in-down"
+                        data-aos-offset="0"
+                        data-aos-delay="150"
+                        data-aos-easing="ease-out-back"
+                        data-aos-anchor-placement="top-bottom">
                             <i class="uil uil-github-alt"></i>
                         </a>
                     </div>
 
-                    <div class="organic__radius home__img scale-hero">
+                    <div class="organic__radius home__img"
+                        data-aos="zoom-in"
+                        data-aos-offset="0"
+                        data-aos-delay="200"
+                        data-aos-easing="ease-out-back"
+                        data-aos-anchor-placement="top-bottom">
                         <div class="organic__radius home__img-background">
                             <img class="organic__radius home__img-profile" src="assets/img/profile_crop.webp" alt="modern desk">
                         </div>
                     </div>
 
-                    <div class="home__data">
+                    <div class="home__data" data-aos-offset="0" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
                         <h1 class="home__title stagger1"><span class="hi-txt">Hi,</span>&nbsp;I'm Dzaky Brori</h1>
                         <h3 class="home__subtitle animated-text stagger1">
                             <span>me.myJob</span>
@@ -99,7 +153,10 @@
                     </div>
                 </div>
 
-                <div class="home__scroll stagger1-2">
+                <div class="home__scroll stagger1-2" 
+                    data-aos="fade-down"
+                    data-aos-delay="150"
+                    data-aos-anchor-placement="top-bottom">
                     <a href="#about" class="home__scroll-button button--flex">
                         <i class="uil uil-mouse-alt home__scroll-mouse"></i>
                         <span class="home__scroll-name">Scroll down</span>
@@ -425,8 +482,16 @@
     </a>
 
     <!-- ====================== ANIMATION ===================== -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        easing: 'ease-in-out', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: true, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-center', // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
 
     <!-- ======================= SWIPER JS ==================== -->
     <script src="assets/js/swiper-bundle.min.js"></script>
